@@ -1,0 +1,88 @@
+.items {
+  padding-top: 30px;
+  // cursor: pointer;
+}
+
+.item {
+  width: 260px;
+  margin-bottom: 29px;
+}
+
+.item__image {
+  width: 260px;
+  display: block;
+  height: 195px;
+}
+
+.item__text-block {
+  box-sizing: border-box;
+  border: 1px solid #ededed;
+  padding: 27px 27px 0 27px;
+  text-align: left;
+}
+
+.item__title {
+  font-weight: bold;
+}
+.item__text {
+  font-size: 13px;
+  line-height: 30px;
+  margin: 5px 0;
+}
+
+.item__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.item__price-block {
+  padding: 20px 0 25px 0;
+  border-top: 1px solid #ededed;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__price-ico {
+  width: 20px;
+  height: 20px;
+  fill: #d3d2d2;
+}
+
+//hover
+
+.item:hover {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+}
+.item__title:hover {
+  opacity: 0.6;
+}
+.item__price:hover {
+  opacity: 0.6;
+}
+.item__price-ico:hover {
+  fill: $theme-color;
+}
+
+//active
+
+.item:active {
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+}
+.item__title:active {
+  opacity: 0.3;
+}
+.item__price:active {
+  opacity: 0.3;
+}
+.item__price-ico:active {
+  fill: $theme-color-active;
+}
+
+
+
+
+@media #{$tablet-widths} {}
+
+@media #{$desktop-widths} {}

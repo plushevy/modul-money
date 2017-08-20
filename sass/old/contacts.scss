@@ -1,0 +1,140 @@
+.contacts {
+  padding: 35px 0 40px 0;
+}
+.contacts__info {
+  width: 260px;
+  margin: 0 auto;
+  padding-bottom: 7px;
+}
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  padding-bottom: 25px;
+}
+.contacts__item {
+  font-size: 15px;
+  line-height: 30px;
+
+  display: flex;
+  padding-bottom: 30px;
+}
+.contacts__item-title {
+  width: 77px;
+  flex-shrink: 0;
+}
+.contacts__item-info {}
+.contacts__item-email {
+  border-bottom: 1px solid $theme-link-color;
+  &:hover {
+    color: $theme-link-color;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__btn {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.map {
+  height: 457px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.map__iframe {
+
+  display: block;
+  border: medium none;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+@media #{$tablet-widths} {
+  .contacts {
+    padding: 62px 0 55px 0;
+  }
+  .contacts__info {
+    width: 668px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+
+  }
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 51px;
+      height: 82px;
+      background: url("../img/icon-flag.svg") no-repeat;
+      z-index: 2;
+      top: -15px;
+      right: 0;
+    }
+  }
+  .contacts__item {
+    font-size: 17px;
+    width: 334px;
+  }
+  .contacts__item-title {}
+  .contacts__item-info {
+  }
+  .contacts__btn {
+    width: 232px;
+  }
+
+  .map {
+    padding-bottom: 55px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .contacts {
+    @include container;
+    padding: 72px 0 53px 175px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts__info {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 350px;
+    margin: 0;
+    padding: 70px 0 0 0;
+  }
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    &:after {
+      top: -8px;
+      left: -111px;
+    }
+  }
+  .contacts__item {}
+  .contacts__item-title {}
+  .contacts__item-info {}
+  .contacts__btn {
+    margin: 0;
+    transform: translateY(-52px);
+  }
+
+  .map {
+    width: 525px;
+    margin: 0;
+    padding: 0;
+  }
+}

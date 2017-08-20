@@ -1,0 +1,100 @@
+.intro {
+  text-align: center;
+  background-color: $bg-page-intro;
+  padding: 70px 0 76px 0;
+  width: 100%;
+
+
+  &--index {
+    padding-bottom: 122px;
+    background-color: $bg-index-intro;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -18px;
+    background-size: 575px auto;
+
+    @media (max-width: 767px) and (min-resolution: 144dpi),
+    (max-width: 767px) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
+  }
+}
+
+// .intro__wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100%;
+// }
+
+.intro__title {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  // padding-top: 70px;
+}
+
+
+@media #{$tablet-widths} {
+    .intro {
+      padding: 93px 0 80px 0;
+      position: relative;
+
+      &--index {
+        padding: 152px 0 374px 0;
+        background-image: url("../img/hero-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url("../img/hero-desktop@2x.jpg");
+        }
+      }
+      // background-size: 768px auto;
+    }
+
+
+    // .intro__wrapper {
+    //   @include container;
+    //   position: relative;
+    // }
+
+  .intro__title {
+    width: 550px;
+    font-size: 43px;
+    line-height: 50px;
+    // padding-top: 152px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .intro {
+    padding: 93px 0 105px 0;
+
+    &--index {
+      padding: 152px 0 360px 0;
+      background-image: url("../img/hero-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1150px auto;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
+    }
+
+  }
+
+  .intro__title {
+    width: 700px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

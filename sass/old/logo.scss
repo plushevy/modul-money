@@ -1,0 +1,46 @@
+.logo {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 0 22px 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+.logo__img {
+  display: block;
+  width: 88px;
+  height: 36px;
+  margin: 0 auto;
+}
+
+
+@media #{$tablet-widths} {
+  .logo {
+    width: 112px;
+    text-align: left;
+    padding: 0;
+  }
+
+  .logo__img {
+    width: 112px;
+    height: 46px;
+    margin: 0;
+  }
+
+}
+
+@media #{$desktop-widths} {
+  .logo {
+    width: 152px;
+  }
+  .logo__img {
+    width: 152px;
+    height: 74px;
+  }
+}

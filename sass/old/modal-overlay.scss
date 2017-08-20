@@ -1,0 +1,8 @@
+  .modal-overlay {
+    @include modal-overlay;
+    display: none;
+
+    &--show {
+      display: block;
+    }
+  }

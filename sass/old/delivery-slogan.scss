@@ -1,0 +1,23 @@
+.delivery-slogan {
+  display: none;
+}
+
+
+@media #{$tablet-widths} {
+  .delivery-slogan {
+    display: block;
+    font-size: 15px;
+    color: #444444;
+    padding: 18px 0;
+
+    position: absolute;
+    top: 0;
+    right: $calc-tablet;
+  }
+}
+
+@media #{$desktop-widths} {
+  .delivery-slogan {
+    right: $calc-desktop;
+  }
+}
