@@ -2,33 +2,34 @@
 .btn{
   display: block;
   box-sizing: border-box;
-  border: 2px solid #444;
-  padding: 16px 0;
+  padding: 17px 0;
 
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 16px;
+  font-size: 22px;
+  line-height: 20px;
   text-align: center;
-  color: #444;
-  background: #fff;
+  color: white;
+  background: $theme2;
+
+  width: 300px;
+
+  &--type2 {
+    background: $theme3;
+  }
 
   &:hover {
     background-color: #444;
-    color: #fff;
   }
   &:active {
     background-color: #444;
-    color: $link-color-hover;
   }
 }
 
-@media #{$tablet-widths} {
-  .btn {
-    font-size: 17px;
-  }
-}
+// @media #{$tablet-widths} {
+//   .btn {
+//     font-size: 17px;
+//   }
+// }
 
-@media #{$desktop-widths} {
-  .btn {}
-}
+// @media #{$desktop-widths} {
+//   .btn {}
+// }

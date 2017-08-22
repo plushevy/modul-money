@@ -1,0 +1,130 @@
+.intro {
+  text-align: center;
+  color: white;
+  background-color: #285b82;
+  padding: 165px 0 35px 0;
+  background: url("../img/intro-bg.png") no-repeat;
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__title{
+    font-size: 71px;
+    line-height: 77px;
+    font-weight: 200;
+    margin-bottom: 25px;
+  }
+  &__description{
+    display: inline-block;
+    max-width: 750px;
+    margin: 0 auto;
+
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 200;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  &__hr{
+    width: 150px;
+    height: 1px;
+    margin: 30px auto;
+    background-color: $theme3;
+  }
+
+  &__description2{
+    display: inline-block;
+    max-width: 930px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 200;
+
+    white-space: pre;
+  }
+
+  &__btn-block {
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+  }
+
+  &__down {
+    width: 25px;
+    height: 15px;
+
+  }
+
+
+}
+
+
+
+
+// @media #{$tablet-widths} {
+//     .intro {
+//       padding: 93px 0 80px 0;
+//       position: relative;
+
+//       &--index {
+//         padding: 152px 0 374px 0;
+//         background-image: url("../img/hero-desktop@1x.jpg");
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size: cover;
+
+//         @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+//           background-image: url("../img/hero-desktop@2x.jpg");
+//         }
+//       }
+//       // background-size: 768px auto;
+//     }
+
+
+//     // .intro__wrapper {
+//     //   @include container;
+//     //   position: relative;
+//     // }
+
+//   .intro__title {
+//     width: 550px;
+//     font-size: 43px;
+//     line-height: 50px;
+//     // padding-top: 152px;
+
+//     br {
+//       display: none;
+//     }
+//   }
+// }
+
+// @media #{$desktop-widths} {
+//   .intro {
+//     padding: 93px 0 105px 0;
+
+//     &--index {
+//       padding: 152px 0 360px 0;
+//       background-image: url("../img/hero-desktop@1x.jpg");
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       background-size: 1150px auto;
+
+//       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+//         background-image: url("../img/hero-desktop@2x.jpg");
+//       }
+//     }
+
+//   }
+
+//   .intro__title {
+//     width: 700px;
+//     font-size: 53px;
+//     line-height: 57px;
+//   }
+// }

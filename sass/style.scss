@@ -1,27 +1,19 @@
 @import "normalize";
+
 @import "variables";
 @import "fonts";
 @import "mixins";
 @import "base";
-@import "header";
-@import "logo";
-@import "main-nav";
-@import "intro";
-@import "bottom-nav";
-@import "delivery-slogan";
-@import "promo";
-@import "main";
-@import "featured";
 @import "btn";
-@import "order-form/main";
-@import "about";
-@import "review";
-@import "contacts";
-@import "items";
-@import "video";
+@import "header";
+
+@import "intro";
+@import "features";
+@import "promo";
+@import "profit-calc";
+@import "invest";
+@import "questions";
+// @import "logo";
+// @import "main-nav";
 @import "footer";
-@import "socials";
-@import "author";
-@import "modal-content";
-@import "size-form";
-@import "modal-overlay";
+

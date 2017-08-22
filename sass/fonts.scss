@@ -1,21 +1,40 @@
+
 @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/opensans.woff2") format(woff2),
-      url("../fonts/opensans.woff") format(woff);
-}
-@font-face {
-  font-family: "Open Sans Light";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/opensanslight.woff2") format(woff2),
-      url("../fonts/opensanslight.woff") format(woff);
-}
-@font-face {
-  font-family: "Open Sans Bold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/opensansbold.woff2") format(woff2),
-      url("../fonts/opensansbold.woff") format(woff);
-}
+			font-family: "RobotoRegular";
+			src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+			src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "RobotoLight";
+			src: url("../fonts/RobotoLight/RobotoLight.eot");
+			src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+			url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	// @font-face {
+	// 		font-family: "RobotoMedium";
+	// 		src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+	// 		src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+	// 		url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+	// 		url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+	// 		font-style: normal;
+	// 		font-weight: normal;
+	// }
+
+	// @font-face {
+	// 		font-family: "RobotoBold";
+	// 		src: url("../fonts/RobotoBold/RobotoBold.eot");
+	// 		src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+	// 		url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+	// 		url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+	// 		font-style: normal;
+	// 		font-weight: normal;
+	// }

@@ -1,0 +1,49 @@
+.questions {
+
+  padding: 100px 0 120px 0;
+
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 62px;
+    line-height: 64px;
+    font-weight: 200;
+    margin-bottom: 80px;
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  &__type {
+    width: 50%;
+    padding-left: 70px;
+    font-size: 28px;
+    line-height: 64px;
+    font-weight: 200;
+
+    &--invest a {
+      color: $theme3; 
+    }
+
+    &--lender a {
+      color: $theme2; 
+    }
+  }
+  &__item {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 200;
+    margin: 40px 0 40px 30px;
+  }
+  &__link {
+    
+  }
+
+
+}
+
