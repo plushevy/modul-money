@@ -102,6 +102,10 @@
     outline: 1px solid $theme3;
   }
 
+  input:not([type="checkbox"]):focus + label {
+    color: $theme3;
+  }
+
 }
 
 input[name="order__radio"] {
