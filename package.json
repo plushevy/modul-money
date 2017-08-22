@@ -1,17 +1,6 @@
 {
-  "name": "48724-mishka",
+  "name": "modul-money",
   "version": "0.1.0",
-  "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
-  "author": "Илья Молчанов",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:htmlacademy-adaptive/48724-mishka.git"
-  },
-  "bugs": {
-    "url": "https://github.com/htmlacademy-adaptive/48724-mishka/issues"
-  },
-  "homepage": "https://github.com/htmlacademy-adaptive/48724-mishka",
   "devDependencies": {
     "autoprefixer": "6.4.1",
     "browser-sync": "2.15.0",
@@ -36,5 +25,18 @@
   ],
   "engines": {
     "node": "6.5"
-  }
+  },
+  "description": "\"# modul-money\"",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plushevy/modul-money.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plushevy/modul-money/issues"
+  },
+  "homepage": "https://github.com/plushevy/modul-money#readme"
 }

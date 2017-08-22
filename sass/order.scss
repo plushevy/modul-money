@@ -1,0 +1,123 @@
+.order {
+  padding: 100px 0;
+  text-align: center;
+  
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__title {
+    font-size: 62px;
+    line-height: 64px;
+    font-weight: 200;
+  }
+
+  &__text {
+    display: inline-block;
+    padding: 0 60px;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 200;
+  }
+
+  &__main {}
+
+  &__labels {
+    display: flex;
+    margin: 0 48px;
+    justify-content: space-between;
+    border-bottom: 1px solid #b8b8b8;
+  }
+
+  &__label {
+    width: 490px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 64px;
+    font-weight: 200;
+    // padding: 20px;
+    color: #959595;
+    border-bottom: 2px solid transparent;
+  }
+
+  &__block {}
+
+  &__form {
+    display: none;
+  }
+
+  &__form-block {
+    width: 600px;
+    margin: 25px auto;
+    position: relative;
+
+    &--check {
+      display: flex;
+      text-align: left;
+    }
+  }
+
+  &__form-label {
+    position: absolute;
+    display: block;
+    background: white;
+    color: #8a8a8a;
+    padding: 0 10px;
+    top: 0;
+    left: 50%;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 200;
+    transform: translate(-50%, -10px);
+    
+
+  }
+
+  &__form-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 200;
+    margin: 25px 0;
+  }
+
+  &__submit {
+    margin: 0 auto;
+  }
+
+  input:not([type="checkbox"]) {
+    min-width: 100%;
+    font-size: 24px;
+    line-height: 26px;
+    padding: 5px 20px;
+  }
+
+  input[type="checkbox"] {
+    min-width: 25px;
+    min-height: 25px;
+    margin-right: 20px;
+  }
+
+  input:focus {
+    outline: 1px solid $theme3;
+  }
+
+}
+
+input[name="order__radio"] {
+  display: none;
+}
+
+#order__radio--lender:checked ~ .order__labels .order__label--lender,
+#order__radio--invest:checked ~ .order__labels .order__label--invest {
+  color: black;
+  border-bottom: 2px solid $theme3;
+}
+
+#order__radio--lender:checked ~ .order__block .order__form--lender,
+#order__radio--invest:checked ~ .order__block .order__form--invest {
+  display: block;
+}
+
+
+

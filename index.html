@@ -110,49 +110,41 @@
       <h2 class="profit-calc__title">Калькулятор доходности</h2>
       <p class="profit-calc__text">Расчёт является примерным, исходя из ставки 30%, ежемесячного графика погашения займа, без учёта реинвестирования, налогов, вероятных потерь и транзакционных расходов.</p>
 
-      <div class="profit-calc__range-block">
+      <div class="profit-calc__range-block range-filter">
 
-        <div class="range-filter">
+        <div class="range-filter__block">
+          <div class="range-filter__result">500 000 ₽</div>
 
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="toggle"></div>
+          <div class="range-filter__controls">
+            <div class="range-filter__scale">
+              <div class="range-filter__bar"></div>
             </div>
-
+            <div class="range-filter__toggle"></div>
           </div>
 
-          <div class="range-filter">
+          <div class="range-filter__label">Сумма инвестиций</div>
+        </div>
 
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="toggle"></div>
+        <div class="range-filter__block">
+          <div class="range-filter__result">12 мес</div>
+
+          <div class="range-filter__controls">
+            <div class="range-filter__scale">
+              <div class="range-filter__bar"></div>
             </div>
-
+            <div class="range-filter__toggle"></div>
           </div>
 
+          <div class="range-filter__label">Срок инвестиций</div>
+        </div>
+          
       </div>
 
 
+      <p class="profit-calc__text">Инвестировав 500 000,<br> через 12 месяцев ваш ожидаемый процентный доход составит:</p>
+      <div class="profit-calc__resume"><span>97 500<span> ₽</div>
 
-
-          <div class="range-filter">
-
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="toggle"></div>
-            </div>
-
-          </div>
-
-
-          <a href="#" class="profit-calc__btn btn btn--type2">Инвестировать</a>
-
+      <a href="#" class="profit-calc__btn btn btn--type2">Инвестировать</a>
 
     </div>
   </section>
@@ -208,42 +200,123 @@
     </div>
   </section>
 
-  <section class="questions">
-    <div class="questions__wrapper">
-      <h2 class="questions__title">Вопросы и ответы</h2>
-      <div class="questions__block">
-        <ul class="questions__type questions__type--invest">Инвесторам
-          <li class="questions__item">
-            <a href="#" class="questions__link">Кто может стать инвестором?</a>
-          </li>
-          <li class="questions__item">
-            <a href="#" class="questions__link">Кому я могу давать займы?</a>
-          </li>
-          <li class="questions__item">
-            <a href="#" class="questions__link">Что мне надо сделать, чтобы инвестировать деньги в проект заемщика?</a></li>
-          <li class="questions__item">
-            <a href="#" class="questions__link">Могу ли я финансировать проект заемщика частично?</a></li>
-        </ul>
-        <ul class="questions__type questions__type--lender">Заемщикам
-          <li class="questions__item">
-            <a href="#" class="questions__link">Кто может стать инвестором?</a>
-          </li>
-          <li class="questions__item">
-            <a href="#" class="questions__link">Кому я могу давать займы?</a>
-          </li>
-          <li class="questions__item">
-            <a href="#" class="questions__link">Что мне надо сделать, чтобы инвестировать деньги в проект заемщика?</a>
-          </li>
-          <li class="questions__item">
-            <a href="#" class="questions__link">Могу ли я финансировать проект заемщика частично?</a>
-          </li>
-        </ul>
+  <section class="profit-calc profit-calc--invest ">
+      <div class="profit-calc__wrapper">
+        <h2 class="profit-calc__title">Простой расчет</h2>
+        <p class="profit-calc__text">Вы платите, только если финансирование привлечено успешно. <br> Никаких скрытых расходов. Комиссия рассчитывается из общей суммы средств.</p>
+  
+        <div class="profit-calc__range-block range-filter">
+  
+          <div class="range-filter__block">
+            <div class="range-filter__result range-filter__result--invest">500 000</div>
+  
+            <div class="range-filter__controls">
+              <div class="range-filter__scale">
+                <div class="range-filter__bar range-filter__bar--invest"></div>
+              </div>
+              <div class="range-filter__toggle range-filter__toggle--invest"></div>
+            </div>
+  
+            <div class="range-filter__label">Сумма привлечения</div>
+          </div>
+            
+        </div>
+  
+        <p class="profit-calc__text">Вы получите на свой счет:</p>
+        <div class="profit-calc__resume profit-calc__resume--invest"><span>485 000<span> ₽</div>
+  
+        <a href="#" class="profit-calc__btn btn">Привлечь инвестиции</a>
+  
       </div>
-    </div>
-  </section>
+    </section>
+
+
+    <section class="order">
+        <div class="order__wrapper">
+          <h2 class="order__title">Оставьте заявку</h2>
+          <p class="order__text">Инвестируйте в амбициозные, ориентированные на прибыль и быстрый рост компании. Получайте дивиденды максимально быстро, с профессиональной юридической защитой.</p>
+
+          <div class="order__main">
+              <input type="radio" name="order__radio" id="order__radio--invest" checked>
+              <input type="radio" name="order__radio" id="order__radio--lender">
+    
+              <div class="order__labels">
+                <label class="order__label order__label--invest" for="order__radio--invest">Инвестор</label>
+                <label class="order__label order__label--lender" for="order__radio--lender">Заемщик</label>
+              </div>
+    
+              <div class="order__block">
+
+                <form action="" class="order__form order__form--invest">
+                  <p class="order__form-text">Представьтесь, чтобы мы знали как к вам обращаться.</p>
+
+                  <div class="order__form-block">
+                      <input type="text" name="name" id="name">
+                      <label for="name" class="order__form-label">Ваше имя</label>
+                  </div>
+
+                  <div class="order__form-block">
+                      <input type="email" name="email" id="email">
+                      <label for="email" class="order__form-label">E-mail</label>
+                  </div>
+
+                  <div class="order__form-block">
+                      <input type="text" name="phone" id="phone">
+                      <label for="phone" class="order__form-label">Телефон</label>
+                  </div>
+
+                  <div class="order__form-block order__form-block--check">
+                      <input type="checkbox" name="checkbox" id="checkbox">
+                      <label for="checkbox" class="form-text">Ознакомлен с Договором оказания услуг, Пользовательским соглашением, Политикой об обработке персональных данных и согласен на обработку персональных данных.</label>
+                  </div>
+
+                  <button class="order__submit btn">Отправить заявку</button>
+
+                </form>
+
+                <div class="order__form order__form--lender">Тут может быть другая форма)</div>
+
+              </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="questions">
+      <div class="questions__wrapper">
+        <h2 class="questions__title">Вопросы и ответы</h2>
+        <div class="questions__block">
+          <ul class="questions__type questions__type--invest">Инвесторам
+            <li class="questions__item">
+              <a href="#" class="questions__link">Кто может стать инвестором?</a>
+            </li>
+            <li class="questions__item">
+              <a href="#" class="questions__link">Кому я могу давать займы?</a>
+            </li>
+            <li class="questions__item">
+              <a href="#" class="questions__link">Что мне надо сделать, чтобы инвестировать деньги в проект заемщика?</a></li>
+            <li class="questions__item">
+              <a href="#" class="questions__link">Могу ли я финансировать проект заемщика частично?</a></li>
+          </ul>
+          <ul class="questions__type questions__type--lender">Заемщикам
+            <li class="questions__item">
+              <a href="#" class="questions__link">Кто может стать инвестором?</a>
+            </li>
+            <li class="questions__item">
+              <a href="#" class="questions__link">Кому я могу давать займы?</a>
+            </li>
+            <li class="questions__item">
+              <a href="#" class="questions__link">Что мне надо сделать, чтобы инвестировать деньги в проект заемщика?</a>
+            </li>
+            <li class="questions__item">
+              <a href="#" class="questions__link">Могу ли я финансировать проект заемщика частично?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
   </main>
-
   
 
   <footer class="page-footer">

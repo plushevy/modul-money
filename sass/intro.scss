@@ -1,9 +1,8 @@
 .intro {
   text-align: center;
   color: white;
-  background-color: #285b82;
   padding: 165px 0 35px 0;
-  background: url("../img/intro-bg.png") no-repeat;
+  background: #285b82 url("../img/intro-bg.png") 50% 0 no-repeat;
 
   &__wrapper {
     @include container;
