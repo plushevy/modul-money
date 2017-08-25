@@ -1,0 +1,101 @@
+
+// переопределяем rangeslider
+
+.rangeslider {
+    background: #eee;
+}
+
+.rangeslider--horizontal {
+    height: 2px;
+    width: calc(100% - 40px);
+    margin-top: 19px;
+    margin-bottom: 15px;
+}
+
+.rangeslider__fill {
+  background:  $theme2;
+}
+
+.rangeslider__handle {
+    background: white;
+    border: 1px solid $theme2;
+    width: 25px;
+    height: 25px;
+    background-image: unset;
+    box-shadow: unset;
+    top: -12px !important;
+}
+
+.rangeslider__handle::after {
+  display: none;
+}
+
+.rangeslider--active .rangeslider__handle {
+    background: white;
+}
+
+
+// конец переопределяем rangeslider
+
+
+
+.range-filter {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+
+  &__block {
+    width: 463px;
+    text-align: left;
+  }
+
+  &__result{
+    font-size: 28px;
+    font-weight: 200;
+    color: $theme3;
+
+    &--invest {
+      color: $theme2;
+    }
+  }
+  
+  // отключить потом
+  &__controls {
+    position: relative;
+    border-radius: 5px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+}
+
+&__scale {
+    height: 2px;
+    background: #d7dcde;
+}
+
+&__bar {
+    width: 30%;
+    height: 2px;
+    background: $theme3;
+
+    &--invest {
+      background: $theme2;
+    }
+}
+
+&__toggle {
+    position: absolute;
+    top: 10px;
+    left: 30%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid $theme3;
+    border-radius: 50%;
+    background: white;
+
+    &--invest {
+      border-color: $theme2;
+    }
+  }
+
+}

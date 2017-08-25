@@ -36,70 +36,7 @@
     }
   }
 
-
-
   &__btn {
     margin: 0 auto;
   }
-}
-
-
-.range-filter {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px 0;
-
-  &__block {
-    width: 463px;
-    text-align: left;
-  }
-
-  &__result{
-    font-size: 28px;
-    font-weight: 200;
-    color: $theme3;
-
-    &--invest {
-      color: $theme2;
-    }
-  }
-
-  &__controls {
-    position: relative;
-    border-radius: 5px;
-    padding-top: 19px;
-    padding-bottom: 15px;
-}
-
-&__scale {
-    height: 2px;
-    background: #d7dcde;
-}
-
-&__bar {
-    width: 30%;
-    height: 2px;
-    background: $theme3;
-
-    &--invest {
-      background: $theme2;
-    }
-}
-
-&__toggle {
-    position: absolute;
-    top: 10px;
-    left: 30%;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    border: 1px solid $theme3;
-    border-radius: 50%;
-    background: white;
-
-    &--invest {
-      border-color: $theme2;
-    }
-  }
-
 }
