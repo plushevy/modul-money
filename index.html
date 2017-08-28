@@ -362,7 +362,7 @@
   
     $(function() {
 
-      $(document).on('change', '#invest-range', function(e) {
+      $(document).on('input', '#invest-range', function(e) {
 
         var num = e.currentTarget.value;
         var time = $('#time-range').val();
@@ -373,7 +373,7 @@
       });
 
 
-      $(document).on('change', '#time-range', function(e) {
+      $(document).on('input', '#time-range', function(e) {
 
         var time = e.currentTarget.value;
         var num = $('#invest-range').val();
