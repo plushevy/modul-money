@@ -17,11 +17,14 @@
 
   &__block {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   &__type {
-    width: 50%;
-    padding-left: 70px;
+    // width: 50%;
+    // padding-left: 70px;
+    width: 450px;
     font-size: 28px;
     line-height: 64px;
     font-weight: 200;
