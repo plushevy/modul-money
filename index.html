@@ -108,37 +108,22 @@
 
       <div class="profit-calc__range-block range-filter">
 
-        <div class="range-filter__block">
-          <div class="range-filter__result">500 000 ₽</div>
-
-          <div class="range-filter__controls">
-            <div class="range-filter__scale">
-              <div class="range-filter__bar"></div>
-            </div>
-            <div class="range-filter__toggle"></div>
+          <div class="range-filter__block">
+              <div class="range-filter__result"><output class="range-filter__output" id="invest-out1">500 000</output> ₽</div>
+              <input class="range-filter__input" id="invest-range" type="range" value="500000" step="100000" min="100000" max="11000000">
+              <div class="range-filter__label">Сумма инвестиций</div>
           </div>
 
-          <div class="range-filter__label">Сумма инвестиций</div>
-        </div>
-
-        <div class="range-filter__block">
-          <div class="range-filter__result">12 мес</div>
-
-          <div class="range-filter__controls">
-            <div class="range-filter__scale">
-              <div class="range-filter__bar"></div>
-            </div>
-            <div class="range-filter__toggle"></div>
+          <div class="range-filter__block">
+              <div class="range-filter__result"><output class="range-filter__output" id="time-out1">12</output> мес</div>
+              <input class="range-filter__input" id="time-range" type="range" value="12" step="1" min="1" max="60">
+              <div class="range-filter__label">Срок инвестиций</div>
           </div>
-
-          <div class="range-filter__label">Срок инвестиций</div>
-        </div>
           
       </div>
 
-
-      <p class="profit-calc__text">Инвестировав 500 000,<br> через 12 месяцев ваш ожидаемый процентный доход составит:</p>
-      <div class="profit-calc__resume"><span>97 500<span> ₽</div>
+      <p class="profit-calc__text">Инвестировав <span id="invest-out2">500 000</span>,<br> через <span id="time-out2">12</span> месяцев ваш ожидаемый процентный доход составит:</p>
+      <div class="profit-calc__resume"><span id="income-calculated">97 500<span> ₽</div>
 
       <a href="#" class="profit-calc__btn btn btn--type2">Инвестировать</a>
 
@@ -204,15 +189,17 @@
         <div class="profit-calc__range-block range-filter">
 
           <div class="range-filter__block">
-              <div class="range-filter__result range-filter__result--invest"><output class="range-filter__output">500 000<output></div>
-              <input class="range-filter__input" type="range" value="500000" step="100000" min="100000" max="11000000">
+              <div class="range-filter__result range-filter__result--invest">
+                <output class="range-filter__output" id="simple-out">500 000</output>
+              </div>
+              <input class="range-filter__input" id="simple-calc" type="range" value="500000" step="100000" min="100000" max="11000000">
               <div class="range-filter__label">Сумма привлечения</div>
           </div>
             
         </div>
   
         <p class="profit-calc__text">Вы получите на свой счет:</p>
-        <div class="profit-calc__resume profit-calc__resume--invest"><output class="profit-calc__output">485 000<output> ₽</div>
+        <div class="profit-calc__resume profit-calc__resume--invest"><output class="profit-calc__output" id="simple-calculated">485 000</output> ₽</div>
   
         <a href="#" class="profit-calc__btn btn">Привлечь инвестиции</a>
   
@@ -259,7 +246,7 @@
                       <label for="checkbox" class="form-text">Ознакомлен с Договором оказания услуг, Пользовательским соглашением, Политикой об обработке персональных данных и согласен на обработку персональных данных.</label>
                   </div>
 
-                  <button class="order__submit btn">Отправить заявку</button>
+                  <button class="order__submit btn btn--type2">Отправить заявку</button>
 
                 </form>
 
@@ -375,17 +362,44 @@
   
     $(function() {
 
-      var outputRange = document.querySelector('.range-filter__output');
-      var outputCalculated = document.querySelector('.profit-calc__output');
+      $(document).on('change', '#invest-range', function(e) {
+
+        var num = e.currentTarget.value;
+        var time = $('#time-range').val();
+
+        $('#invest-out1').text(num);
+        $('#invest-out2').text(num);
+        $('#income-calculated').text(((num - time) * 0.75).toFixed(0));
+      });
+
+
+      $(document).on('change', '#time-range', function(e) {
+
+        var time = e.currentTarget.value;
+        var num = $('#invest-range').val();
+
+        $('#time-out1').text(time);
+        $('#time-out2').text(time);
+        $('#income-calculated').text(((num - time) * 0.75).toFixed(0));
+      });
+
       
-      $(document).on('input', 'input[type="range"]', function(e) {
-        outputRange.innerHTML = e.currentTarget.value;
-        outputCalculated.innerHTML = (e.currentTarget.value * 0.75).toFixed(0);
+      $(document).on('input', '#simple-calc', function(e) {
+        $('#simple-out').text(e.currentTarget.value);
+        $('#simple-calculated').text(e.currentTarget.value * 0.75).toFixed(0);
       });
     
-      $('input[type=range]').rangeslider({
+
+      $('#simple-calc').rangeslider({
+        polyfill: false,
+        fillClass: 'rangeslider__fill--simple',
+        handleClass: 'rangeslider__handle--simple'
+      });
+
+      $('#invest-range, #time-range').rangeslider({
         polyfill: false
       });
+
   });
 
 </script>

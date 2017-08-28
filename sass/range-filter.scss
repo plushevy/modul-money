@@ -13,17 +13,44 @@
 }
 
 .rangeslider__fill {
-  background:  $theme2;
+  background: $theme3;
+  position: absolute;
 }
 
+.rangeslider__fill--simple {
+  background:  $theme2;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+
 .rangeslider__handle {
-    background: white;
-    border: 1px solid $theme2;
-    width: 25px;
-    height: 25px;
-    background-image: unset;
-    box-shadow: unset;
-    top: -12px !important;
+  background: white;
+  border: 1px solid $theme3;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-image: unset;
+  box-shadow: unset;
+  top: -12px !important;
+  border-radius: 50%;
+}
+
+.rangeslider__handle--simple {
+  background: white;
+  border: 1px solid $theme2;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-image: unset;
+  box-shadow: unset;
+  top: -12px !important;
+  border-radius: 50%;
 }
 
 .rangeslider__handle::after {
@@ -36,8 +63,6 @@
 
 
 // конец переопределяем rangeslider
-
-
 
 .range-filter {
   display: flex;
