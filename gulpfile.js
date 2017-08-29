@@ -12,6 +12,7 @@ var svgstore = require ("gulp-svgstore");
 var svgmin = require ("gulp-svgmin");
 var run = require ("run-sequence");
 var del = require("del");
+var upmodul = require("gulp-update-modul");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -70,6 +71,10 @@ gulp.task("clean", function() {
   return del("build");
 });
 
+gulp.task('watch', function () {
+    gulp.start('update-modul');
+});
+
 gulp.task("serve", function() {
   server.init({
     server: "build",
@@ -92,4 +97,11 @@ gulp.task("build", function(fn) {
     "symbols",
      fn
    );
-  });
+});
+
+gulp.task('update-modul', function () {
+    gulp.src('package.json')
+    .pipe(upmodul('latest, true')); //update all modules latest version. 
+});
+  
+  
