@@ -3,6 +3,7 @@
   color: white;
   padding: 165px 0 35px 0;
   background: #285b82 url("../img/intro-bg.png") 50% 0 no-repeat;
+  background-size: auto 100%;
 
   &__wrapper {
     @include container;
@@ -15,8 +16,7 @@
     margin-bottom: 25px;
   }
   &__description{
-    // display: inline-block;
-    // max-width: 750px;
+
     margin: 0 auto;
 
     font-size: 24px;
@@ -34,8 +34,7 @@
   }
 
   &__description2{
-    // display: inline-block;
-    // max-width: 930px;
+
     margin: 0 auto;
     margin-bottom: 65px;
 

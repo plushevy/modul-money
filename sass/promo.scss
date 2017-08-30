@@ -3,8 +3,7 @@
   padding: 90px 0 35px 0;
   color: white;
   text-align: center;
-  background: url("/img/blue-bg.png") no-repeat;
-  background-position: center;
+  background: radial-gradient(circle at 51% -10%, #116e9c, #11234d);
 
   &__wrapper {
     @include container;
